@@ -144,6 +144,7 @@ select::-webkit-scrollbar-thumb:hover {
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
+    z-index: -1;
 }
 
 #set-alarm-btn {
@@ -152,14 +153,18 @@ select::-webkit-scrollbar-thumb:hover {
     left: 124px;
     width: 299px;
     height: 50px;
-    background: transparent linear-gradient(113deg, #6e54ec 0%, #cb52f8 40%, #fc5eff 81%, #f1a7c5 100%) 0% 0% no-repeat padding-box;
+    /* background: transparent linear-gradient(113deg, #6e54ec 0%, #cb52f8 40%, #fc5eff 81%, #f1a7c5 100%) 0% 0% no-repeat padding-box; */
+    background: transparent linear-gradient(113deg, #6e54ec 0%, #cb52f8 40%) no-repeat padding-box;
     border-radius: 4px;
     border: 1px solid rgb(0 0 0 / 0%);
     color: white;
     font: normal normal 600 24px/38px Manrope;
+    box-shadow: 0px 6px 20px rgb(0 0 0 / 0.5);
+    cursor: pointer;
 }
 
 #alarm-time-viewer {
+    display: none;
     position: absolute;
     top: 630px;
     left: 437px;
@@ -221,10 +226,9 @@ select::-webkit-scrollbar-thumb:hover {
 }
 
 /* Clock Time */
-/* #clock-container {
-    position: absolute;
-    left: 30px;
-} */
+.clock-layers:last-child {
+    box-shadow: 0px 6px 20px rgb(0 0 0 / 0.5);
+}
 
 .clock-time {
     top: 62px;
@@ -277,11 +281,13 @@ select::-webkit-scrollbar-thumb:hover {
 
 #big-img-container {
     position: absolute;
-    top: 365px;
+    top: 355px;
     left: 737px;
     width: 536px;
     height: 341px;
-    background: transparent url("../Assets/Images/") 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 20px rgb(0 0 0 / 0.5);
+    background: white url("../Assets/Images/welcome_img.png") 0% 0% padding-box;
     background-size: 536px 341px;
     background-repeat: no-repeat;
+    border-radius: 10px;
 }

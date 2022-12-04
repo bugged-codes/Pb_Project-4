@@ -4,8 +4,10 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <!--* Favicons -->
-        <link rel="icon" type="image/gif" sizes="120x120" href="./Assets/Favicon/icons8-alarm-clock.gif" />
+        <link rel="icon" type="image/png" sizes="96x96" href="./Assets/Favicons/icons8-alarm-clock-ios-16-filled-96.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./Assets/Favicons/icons8-alarm-clock-ios-16-filled-32.png" />
 
         <!--* Font Families  -->
         <style>
@@ -13,6 +15,7 @@
         </style>
 
         <link rel="stylesheet" href="./CSS/main.css" />
+
         <title>4th-Project</title>
     </head>
     <body>
@@ -20,11 +23,14 @@
             <div id="clock-img-container">
                 <img id="clock-img" src="./Assets/Images/clock_logo@2x.png" alt="Logo stating clock with a picture of analog clock." />
             </div>
+
             <div id="set-alarm-container">
                 <img id="mini-sun-img" class="grid-area1" src="./Assets/Icons/wake_up.svg" alt="Miniturized Sun Image in purple color" />
+
                 <div class="grid-area2">Set wake up time</div>
+
                 <form class="sac-forms grid-area3" action="" style="z-index: 5">
-                    <select id="wakeUpTime-select" class="sac-timeSelectors" name="wakeUpTime" onfocus="this.size=5;" onblur="this.size=1;" onchange="this.size=1; this.blur()" ;>
+                    <select id="wakeUpTime-select" class="sac-timeSelectors" name="wakeUpTime" onfocus="this.size=6;" onblur="this.size=1;" onchange="this.size=1; this.blur()" ;>
                         <option value="12 AM - 01 AM">12 AM - 01 AM</option>
                         <option value="01 AM - 02 AM">01 AM - 02 AM</option>
                         <option value="02 AM - 03 AM">02 AM - 03 AM</option>
@@ -46,14 +52,18 @@
                         <option value="07 PM - 08 PM">07 PM - 08 PM</option>
                         <option value="08 PM - 09 PM">08 PM - 09 PM</option>
                         <option value="10 PM - 11 PM">10 PM - 11 PM</option>
-                        <option value="11 PM - 12 PM">11 PM - 12 PM</option>
+                        <option value="11 PM - 12 PM">11 PM - 12 AM</option>
                     </select>
                 </form>
+
                 <div class="grid-area4 sac-line-div"></div>
+
                 <img class="sac-mini-img grid-area5" src="./Assets/Icons/lunch_time.svg" alt="Miniturized X mark made with spoon & fork placing on top of each other in purple color" />
+
                 <div class="grid-area6">Set lunch time</div>
+
                 <form class="sac-forms grid-area7" action="" style="z-index: 4">
-                    <select id="wakeUpTime-select" class="sac-timeSelectors" name="wakeUpTime" onfocus="this.size=5;" onblur="this.size=1;" onchange="this.size=1; this.blur()" ;>
+                    <select id="lunchTime-select" class="sac-timeSelectors" name="lunchTime" onfocus="this.size=6;" onblur="this.size=1;" onchange="this.size=1; this.blur()" ;>
                         <option value="12 AM - 01 AM">12 AM - 01 AM</option>
                         <option value="01 AM - 02 AM">01 AM - 02 AM</option>
                         <option value="02 AM - 03 AM">02 AM - 03 AM</option>
@@ -75,14 +85,18 @@
                         <option value="07 PM - 08 PM">07 PM - 08 PM</option>
                         <option value="08 PM - 09 PM">08 PM - 09 PM</option>
                         <option value="10 PM - 11 PM">10 PM - 11 PM</option>
-                        <option value="11 PM - 12 PM">11 PM - 12 PM</option>
+                        <option value="11 PM - 12 PM">11 PM - 12 AM</option>
                     </select>
                 </form>
+
                 <div class="grid-area8 sac-line-div"></div>
+
                 <img class="sac-mini-img grid-area9" src="./Assets/Icons/nap_time.svg" alt="Miniturized image of multiple Z's stacked on top of each other." />
+
                 <div class="grid-area10">Set nap time</div>
+
                 <form class="sac-forms grid-area11" action="" style="z-index: 3">
-                    <select id="wakeUpTime-select" class="sac-timeSelectors" name="wakeUpTime" onfocus="this.size=5;" onblur="this.size=1;" onchange="this.size=1; this.blur()" ;>
+                    <select id="napTime-select" class="sac-timeSelectors" name="napTime" onfocus="this.size=6;" onblur="this.size=1;" onchange="this.size=1; this.blur()" ;>
                         <option value="12 AM - 01 AM">12 AM - 01 AM</option>
                         <option value="01 AM - 02 AM">01 AM - 02 AM</option>
                         <option value="02 AM - 03 AM">02 AM - 03 AM</option>
@@ -104,14 +118,18 @@
                         <option value="07 PM - 08 PM">07 PM - 08 PM</option>
                         <option value="08 PM - 09 PM">08 PM - 09 PM</option>
                         <option value="10 PM - 11 PM">10 PM - 11 PM</option>
-                        <option value="11 PM - 12 PM">11 PM - 12 PM</option>
+                        <option value="11 PM - 12 PM">11 PM - 12 AM</option>
                     </select>
                 </form>
+
                 <div class="grid-area12 sac-line-div"></div>
+
                 <img class="sac-mini-img grid-area13" src="./Assets/Icons/good_night_sleep.png" alt="Miniturized moon phase to portray night time." />
+
                 <div class="grid-area14">Set night time</div>
+
                 <form class="sac-forms grid-area15" action="">
-                    <select id="wakeUpTime-select" class="sac-timeSelectors" name="wakeUpTime" onfocus="this.size=5;" onblur="this.size=1;" onchange="this.size=1; this.blur()" ;>
+                    <select id="nightTime-select" class="sac-timeSelectors" name="nightTime" onfocus="this.size=6;" onblur="this.size=1;" onchange="this.size=1; this.blur()" ;>
                         <option value="12 AM - 01 AM">12 AM - 01 AM</option>
                         <option value="01 AM - 02 AM">01 AM - 02 AM</option>
                         <option value="02 AM - 03 AM">02 AM - 03 AM</option>
@@ -133,44 +151,55 @@
                         <option value="07 PM - 08 PM">07 PM - 08 PM</option>
                         <option value="08 PM - 09 PM">08 PM - 09 PM</option>
                         <option value="10 PM - 11 PM">10 PM - 11 PM</option>
-                        <option value="11 PM - 12 PM">11 PM - 12 PM</option>
+                        <option value="11 PM - 12 PM">11 PM - 12 AM</option>
                     </select>
                 </form>
             </div>
-            <div id="alarm-status-text">Alarm text</div>
-            <button id="set-alarm-btn">Set Alarm</button>
-            <div id="alarm-time-viewer">
-                Wake Up Time :
+
+            <div id="alarm-status-text">
+                Greetings..!
                 <br />
-                Lunch Time :
-                <br />
-                Nap Time :
-                <br />
-                Night Time :
+                Hope you are having a great day.
             </div>
+
+            <button id="set-alarm-btn">Set Alarm</button>
+
+            <div id="alarm-time-viewer">
+                Wake Up Time : <span id="wakeUpTime-span"></span>
+                <br />
+                Lunch Time : <span id="lunchTime-span"></span>
+                <br />
+                Nap Time : <span id="napTime-span"></span>
+                <br />
+                Night Time : <span id="nightTime-span"></span>
+            </div>
+
             <div id="clock-container">
-                <div id="layer1">
+                <div id="layer1" class="clock-layers">
                     Time
                     <div id="clock-hrs" class="clock-time">
-                        <div class="time-digits"></div>
+                        <div id="hr-time-digits" class="time-digits"></div>
                         <div class="time-text">hours</div>
                     </div>
                     <div id="clock-min" class="clock-time">
-                        <div class="time-digits"></div>
+                        <div id="min-time-digits" class="time-digits"></div>
                         <div class="time-text">mins</div>
                     </div>
                     <div id="clock-sec" class="clock-time">
-                        <div class="time-digits"></div>
+                        <div id="sec-time-digits" class="time-digits"></div>
                         <div class="time-text">secs</div>
                     </div>
                     <div id="am-pm-container" class="clock-time"></div>
                 </div>
-                <div id="layer2"></div>
-                <div id="layer3"></div>
+                <div id="layer2" class="clock-layers"></div>
+                <div id="layer3" class="clock-layers"></div>
             </div>
-            <div id="time-status-text">Time status</div>
+
+            <div id="time-status-text">Welcome <img id="namaste-icon" src="./Assets/Icons/icons8-namaste-64.png" alt="Namaste Icon" /></div>
+
             <div id="big-img-container"></div>
         </div>
+
         <script src="./Scripts/main.js"></script>
     </body>
 </html>
