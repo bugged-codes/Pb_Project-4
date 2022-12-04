@@ -41,7 +41,7 @@ function myFunction() {
 	let nightTimeArr = nightTimeStr.split(" ");
 
 	// Overwriting display = none property after set-alarm-btn is clicked.
-	document.getElementById("alarm-time-viewer").style.display = "block";
+	document.getElementById("alarm-time-viewer").style.visibility = "visible";
 
 	document.getElementById("wakeUpTime-span").textContent = wakeUpTimeStr;
 	document.getElementById("lunchTime-span").textContent = lunchTimeStr;
@@ -53,22 +53,22 @@ function myFunction() {
 
 	document.getElementById("namaste-icon").style.display = "none";
 
-	if (Number(currentTime) >= Number(wakeUpTimeArr[0]) && Number(currentTime) < Number(wakeUpTimeArr[3]) && currentAmPm === wakeUpTimeArr[1]) {
+	if (Number(currentTime) >= Number(wakeUpTimeArr[0]) && currentAmPm === wakeUpTimeArr[1]) {
 		document.getElementById("big-img-container").style.backgroundImage = "url('../Assets/Images/morning_img.svg')";
 		document.getElementById("time-status-text").textContent = "Grab Some helthy breakfast!!!";
 		document.getElementById("alarm-status-text").textContent = "GOOD MORNING!! WAKE UP !!";
 		console.log("Gm");
-	} else if (Number(currentTime) >= Number(lunchTimeArr[0]) && Number(currentTime) < Number(lunchTimeArr[3]) && currentAmPm === lunchTimeArr[1]) {
+	} else if (Number(currentTime) >= Number(lunchTimeArr[0]) && currentAmPm === lunchTimeArr[1]) {
 		document.getElementById("big-img-container").style.backgroundImage = "url('../Assets/Images/lunch_img.svg')";
 		document.getElementById("time-status-text").textContent = "LET'S HAVE SOME LUNCH !!";
 		document.getElementById("alarm-status-text").textContent = "GOOD AFTERNOON !! HAVE NICE MEAL !!";
 		console.log("lunch");
-	} else if (Number(currentTime) >= Number(napTimeArr[0]) && Number(currentTime) < Number(napTimeArr[3]) && currentAmPm === napTimeArr[1]) {
+	} else if (Number(currentTime) >= Number(napTimeArr[0]) && currentAmPm === napTimeArr[1]) {
 		document.getElementById("big-img-container").style.backgroundImage = "url('../Assets/Images/evening_img.png')";
 		document.getElementById("time-status-text").textContent = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
 		document.getElementById("alarm-status-text").textContent = "GOOD EVENING!!!";
 		console.log("evening");
-	} else if (Number(currentTime) >= Number(nightTimeArr[0]) && Number(currentTime) < Number(nightTimeArr[3]) && currentAmPm === nightTimeArr[1]) {
+	} else if (Number(currentTime) >= Number(nightTimeArr[0]) && currentAmPm === nightTimeArr[1]) {
 		document.getElementById("big-img-container").style.backgroundImage = "url('../Assets/Images/night_img.svg')";
 		document.getElementById("time-status-text").textContent = "CLOSE YOUR EYES AND GO TO SLEEP...";
 		document.getElementById("alarm-status-text").textContent = "GOOD NIGHT! SWEET DREAMS!!";
