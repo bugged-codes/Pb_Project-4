@@ -1,7 +1,3 @@
-* {
-	outline: 1px red solid;
-}
-
 body {
 	margin: 0px;
 	background-image: radial-gradient(ellipse at center, rgb(255 255 255) -150%, rgb(61 8 123));
