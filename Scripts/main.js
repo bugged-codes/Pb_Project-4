@@ -48,31 +48,36 @@ function myFunction() {
 	document.getElementById("napTime-span").textContent = napTimeStr;
 	document.getElementById("nightTime-span").textContent = nightTimeStr;
 
-	let currentTime = document.getElementById("hr-time-digits");
-	let currentAmPm = document.getElementById("am-pm-container");
+	let currentTime = document.getElementById("hr-time-digits").textContent;
+	let currentAmPm = document.getElementById("am-pm-container").textContent;
 
-	document.getElementById("namaste-icon").style.display = "none";
+	// console.log(currentTime);
+	// console.log(currentAmPm);
+	// console.log(wakeUpTimeArr);
+	// console.log(lunchTimeArr);
+	// console.log(napTimeArr);
+	// console.log(nightTimeArr);
 
-	if (Number(currentTime) >= Number(wakeUpTimeArr[0]) && currentAmPm === wakeUpTimeArr[1]) {
+	if (Number(currentTime) === Number(wakeUpTimeArr[0]) && currentAmPm === wakeUpTimeArr[1]) {
 		document.getElementById("big-img-container").style.backgroundImage = "url('../Assets/Images/morning_img.svg')";
 		document.getElementById("time-status-text").textContent = "Grab Some helthy breakfast!!!";
 		document.getElementById("alarm-status-text").textContent = "GOOD MORNING!! WAKE UP !!";
-		console.log("Gm");
-	} else if (Number(currentTime) >= Number(lunchTimeArr[0]) && currentAmPm === lunchTimeArr[1]) {
+		// console.log("Gm");
+	} else if (Number(currentTime) === Number(lunchTimeArr[0]) && currentAmPm === lunchTimeArr[1]) {
 		document.getElementById("big-img-container").style.backgroundImage = "url('../Assets/Images/lunch_img.svg')";
 		document.getElementById("time-status-text").textContent = "LET'S HAVE SOME LUNCH !!";
-		document.getElementById("alarm-status-text").textContent = "GOOD AFTERNOON !! HAVE NICE MEAL !!";
-		console.log("lunch");
-	} else if (Number(currentTime) >= Number(napTimeArr[0]) && currentAmPm === napTimeArr[1]) {
+		document.getElementById("alarm-status-text").innerHTML = "GOOD AFTERNOON !! <br> HAVE NICE MEAL !!";
+		// console.log("lunch");
+	} else if (Number(currentTime) === Number(napTimeArr[0]) && currentAmPm === napTimeArr[1]) {
 		document.getElementById("big-img-container").style.backgroundImage = "url('../Assets/Images/evening_img.png')";
 		document.getElementById("time-status-text").textContent = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
 		document.getElementById("alarm-status-text").textContent = "GOOD EVENING!!!";
-		console.log("evening");
-	} else if (Number(currentTime) >= Number(nightTimeArr[0]) && currentAmPm === nightTimeArr[1]) {
+		// console.log("evening");
+	} else if (Number(currentTime) === Number(nightTimeArr[0]) && currentAmPm === nightTimeArr[1]) {
 		document.getElementById("big-img-container").style.backgroundImage = "url('../Assets/Images/night_img.svg')";
 		document.getElementById("time-status-text").textContent = "CLOSE YOUR EYES AND GO TO SLEEP...";
 		document.getElementById("alarm-status-text").textContent = "GOOD NIGHT! SWEET DREAMS!!";
-		console.log("night");
+		// console.log("night");
 	}
 
 	setInterval(myFunction, 1000);
