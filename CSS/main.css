@@ -200,6 +200,15 @@ select::-webkit-scrollbar-thumb:hover {
 	cursor: pointer;
 }
 
+#set-alarm-btn:hover::before {
+	content: "Click Me!";
+	color: white;
+}
+
+#set-alarm-btn:hover span {
+	display: none;
+}
+
 #alarm-time-viewer {
 	visibility: hidden;
 	/* position: absolute;
