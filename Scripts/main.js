@@ -71,6 +71,10 @@ function myFunction() {
 		document.getElementById("time-status-text").textContent = "CLOSE YOUR EYES AND GO TO SLEEP...";
 		document.getElementById("alarm-status-text").textContent = "GOOD NIGHT! SWEET DREAMS!!";
 		// console.log("night");
+	} else {
+		document.getElementById("big-img-container").style.backgroundImage = "url('./Assets/Images/sand-clock-img.gif')";
+		document.getElementById("time-status-text").textContent = "Go do your work.";
+		document.getElementById("alarm-status-text").textContent = "There's still time..!";
 	}
 }
 
