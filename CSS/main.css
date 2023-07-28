@@ -420,18 +420,27 @@ select::-webkit-scrollbar-thumb:hover {
 /** Media Qury for Screen little wider than mobile screens and all mobile screens*/
 @media only screen and (max-width: 590px) {
 	html {
-		width: fit-content;
+		width: 100%;
 		height: 190vh;
 	}
 
+	.topLevel-grids {
+		justify-content: center;
+	}
+
 	#topLevel-left-grid {
-		margin-left: 0.8rem;
+		margin-left: 0rem;
 		margin-bottom: 2rem;
+		width: 100%;
+		grid-template-columns: 100%;
 	}
 
 	#topLevel-right-grid {
 		margin-right: 0;
 		margin-top: 2rem;
+		display: grid;
+		grid-template-columns: 100%;
+		width: 100%;
 	}
 
 	#container {
@@ -451,7 +460,7 @@ select::-webkit-scrollbar-thumb:hover {
 	}
 
 	#set-alarm-container {
-		width: 75%;
+		width: 90%;
 	}
 
 	.sac-timeSelectors {
@@ -470,4 +479,60 @@ select::-webkit-scrollbar-thumb:hover {
 		flex: 1 1 0%;
 	}
 
+	#alarm-time-viewer {
+		flex-basis: 10%;
+	}
+
+	.sac-forms {
+		width: max-content;
+	}
+
+	.sac-timeSelectors {
+		padding: 0;
+	}
+
+	#alarm-status-text {
+		height: fit-content;
+	}
+
+	#layer1 {
+		width: 95%;
+		margin-inline: auto;
+	}
+
+	#am-pm-container {
+		width: 3.5rem;
+	}
+
+	#layer2 {
+		left: 8%;
+		width: 85%
+	}
+
+	#layer3 {
+		width: 65%;
+		left: 20%;
+
+	}
+
+	#time-status-text {
+		width: 95%;
+		margin-inline: auto;
+	}
+
+	#big-img-container {
+		width: 95%;
+		height: 90vw;
+		object-fit: cover;
+		background-position: center;
+		margin-inline: auto;
+	}
+
+	.time-digits {
+		font-size: 2rem;
+	}
+
+	.time-text {
+		font-size: 1rem;
+	}
 }
