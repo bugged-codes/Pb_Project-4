@@ -72,6 +72,9 @@ select::-webkit-scrollbar {
 select::-webkit-scrollbar-track {
 	box-shadow: inset 0 0 5px #8a11bf;
 	border-radius: 10px;
+	opacity: 1;
+	z-index: 90;
+	position: relative;
 }
 
 /* Handle */
@@ -80,11 +83,21 @@ select::-webkit-scrollbar-thumb {
 	border: 1px solid #f6e2ff;
 	border-radius: 10px;
 	box-shadow: inset 0 0 3px #f6e2ff;
+	opacity: 1;
 }
 
 /* Handle on hover */
 select::-webkit-scrollbar-thumb:hover {
 	background: #ebbfff;
+}
+
+/* increasing padding between two lines of option */
+option {
+	padding: 3px 5px;
+	z-index: 10;
+	position: relative;
+	background-color: white;
+	opacity: 1;
 }
 
 /* !doesn't increases line height of dropdown items.
@@ -465,6 +478,7 @@ select::-webkit-scrollbar-thumb:hover {
 
 	.sac-timeSelectors {
 		width: 100%;
+		padding: 0;
 	}
 
 	#left-gridBottom,
@@ -485,10 +499,6 @@ select::-webkit-scrollbar-thumb:hover {
 
 	.sac-forms {
 		width: max-content;
-	}
-
-	.sac-timeSelectors {
-		padding: 0;
 	}
 
 	#alarm-status-text {
