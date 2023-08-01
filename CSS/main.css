@@ -229,7 +229,7 @@ option {
 }
 
 #set-alarm-btn:hover::before {
-	content: "Click Me!";
+	content: "Set New Alarm!";
 	color: white;
 }
 
@@ -428,6 +428,11 @@ option {
 	#clock-img {
 		margin: 0 auto;
 	}
+
+	#alarm-time-viewer {
+		width: fit-content;
+		padding-inline: 2.2rem;
+	}
 }
 
 /** Media Qury for Screen little wider than mobile screens and all mobile screens*/
@@ -485,16 +490,21 @@ option {
 	#alarm-status-text {
 		width: 90%;
 		margin-inline: auto;
+		margin-block: 1rem;
 		gap: 20px;
+		flex-direction: column;
 	}
 
 	#set-alarm-btn,
 	#alarm-time-viewer {
 		flex: 1 1 0%;
+		margin-bottom: 1rem;
 	}
 
 	#alarm-time-viewer {
 		flex-basis: 10%;
+		width: fit-content;
+		padding-inline: 2.2rem;
 	}
 
 	.sac-forms {
